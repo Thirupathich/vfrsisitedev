@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Surgeons Description</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css"
+    />
+
+    <script src="js/marquee.js"></script>
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .surgeondetails li a{
+        font-size:15px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <article>
+      <nav class="navbar navbar-expand-md bg-light navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.png" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-link nav-item dropdown">
+                <a href="about.html">About</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                </span>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="vision.html"
+                    >Vision & Mission</a
+                  >
+                  <a class="dropdown-item" href="technology.html">Technology</a>
+                  <a class="dropdown-item" href="timeline.html">Time Line</a>
+                  <a class="dropdown-item" href="manimenon.html"
+                    >Dr. Mani Menon, V. U. I.</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-link nav-item dropdown">
+                <a href="ournetwork.html">Our Network</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                </span>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="institute.html">Institutes</a>
+                  <a class="dropdown-item" href="surgeons.html">Surgeons</a>
+                  <a class="dropdown-item" href="specialty.html">Specialties</a>
+                  <a class="dropdown-item" href="scholar.html">Scholar</a>
+                </div>
+              </li>
+
+              <li class="nav-link nav-item dropdown">
+                <a href="surgeonslibrary.html"> Surgeon's Library</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                </span>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="surgeonslibrary.html"
+                    >Videos</a
+                  >
+                  <a class="dropdown-item" href="publications.html"
+                    >Publications</a
+                  >
+                  <a class="dropdown-item" href="gallery.html">Gallery</a>
+                </div>
+              </li>
+
+              <li class="nav-link nav-item dropdown">
+                <a href="newsandevents.html"> News & Events</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                </span>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="news.html">News</a>
+                  <a class="dropdown-item" href="events.html">Events</a>
+                  <a class="dropdown-item" href="masterclasses.html"
+                    >Master Classes</a
+                  >
+                  <a class="dropdown-item" href="rsc.html">RSC</a>
+                </div>
+              </li>
+
+              <li class="nav-link nav-item dropdown">
+                <a href="patientlibrary.html"> Patient's Library</a>
+                <span
+                  class="dropdown-toggle"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                >
+                </span>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="resources.html">Resources</a>
+                  <a class="dropdown-item" href="forum.html">Forum</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline" action="/action_page.php">
+              <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <!-- <button class="btn btn-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="container mt-3">
+          <!-- <h3 class="vattihead" style="margin-bottom: 0px">
+            Vattikuti Urology Institute, Henry Ford Health System
+          </h3> -->
+        
+          <div class="row">
+            
+            <div class="col-md-12">
+              <hr />
+              <ul class="nav nav-tabs nav-justified surgeondetails" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active btn-outline-primary" data-toggle="tab" href="#Profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-outline-secondary" data-toggle="tab" href="#Academic"> Academic Qualification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-outline-info" data-toggle="tab" href="#Awards"> Awards & Recognition</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-outline-info" data-toggle="tab" href="#Membership">  Membership & Certification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-outline-info" data-toggle="tab" href="#Research">  Research & Publication</a>
+                </li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="Profile" class="container tab-pane active "><br>
+                  <div class="container card ">
+                      <div class="row mt-1">
+                          <div class="col-md-4">
+                           
+                              <img
+                                src="img/Akshay_Bhandari.jpg"
+                                class="img-fluid img-thumbnail my-3 d-block m-auto" style="height:60vh;"
+                              />
+                           
+                          </div>
+                          <div class="col-md-8">
+                            <h3 class="vattihead" style="margin-bottom: 0px">
+                              Akshay Bhandari
+                            </h3>
+                            <p><strong>Speciality:</strong> Urology</p>
+                            <p>
+                              
+                            
+                              Dr. Bhandari is one of the most experienced robotic surgeons in Florida, having performed more than 750 robotic procedures, including radical prostatectomy, nephrectomy, partial nephrectomy, radical cystectomy and other complex robotic urologic procedures.  Dr. Bhandari has been invited to demonstrate live surgeries around the world and is the international coordinator for the network of Vattikuti Institutes of Robotic Surgery in India and across the globe.  As the international coordinator, he mentors teams at new institutes on a regular basis.  Dr. Bhandari has more than 40 peer-reviewed publications in various national and international journals.
+                             
+                            </p>
+                            <dl>
+                              <dt>EXPERTISE</dt>
+                              <dd>Urology, robotic surgery, urologic oncology</dd>
+                                
+                                 
+                                
+                                <dt>DESIGNATION</dt>
+                                <dd>Director of Robotic Urology and Assistant Professor of Urology</dd>
+                                
+                                
+                               <dt> HOSPITAL</dt>
+                               <dd> Columbia University Division of Urology</dd>
+                            </dl>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  
+                </div>
+                <div id="Academic" class="container tab-pane fade mt-5">
+                  <div class="row">
+                    <div class="card w-100">
+                      <div class="col-md-12 px-3">
+                        <dl>
+                          <dt>Medical School</dt>
+                          <dd>Ganesh Shankar Vidhyarthi Memorial (GSVM) medical college Kanpur, india
+                          </dd>
+                            
+                             
+                            
+                            <dt>Residency</dt>
+                            <dd> Vattikuti Urology institute at Henry Ford Hospital
+                            </dd>
+                            
+                            
+                           <dt> Fellowship</dt>
+                           <dd>  Vattikuti Urology institute at Henry Ford Hospital
+
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Awards" class="container tab-pane fade mt-5">
+                  <div class="row">
+                    <div class="card w-100">
+                      <div class="col-md-12 px-3">
+                        <div class="card-block px-6">
+                          <h4 class="card-title">
+                            AWARDS/HONORS
+                          </h4>
+                          <ol>
+                            <li>Jan Rival, MD Outstanding Resident Award 2010, Henry Ford Health System, Detroit.
+                            </li>
+                            <li>Best Video: Heminephrectomy in Horseshoe Kidney: Robotic Assistance to Optimize Vascular Control & Renorrhaphy. ERUS 2010, Bordeaux, France.
+                            </li>
+                            <li>Best Poster: Catheter free radical prostatectomy: Feasibility and early outcomes. AUA 2009, Chicago, IL.
+                            </li>
+                            <li>Gerald P. Murphy Scholar: AUA 2008.
+                            </li>
+                            <li>Award of Appreciation: Institute of Nephrology and Urology, Hospital Kuala Lumpur Malaysian Urologic Foundation and Malaysian Ministry of Health, November 11, 2007.
+                            </li>
+                            <li>First prize: A novel technique for creating solid renal pseudotumors in a live porcine model: Training wheels for partial nephrectomy. Michigan Urological Society, 2007, Livonia, MI.
+                            </li>
+                            <li>Certificate of merit in Internal Medicine in the final professional examinations, 1998.
+                            </li>
+                            <li>Gold Merit Certificate: For securing the highest marks in Biology in the Board Examinations (92%), 1993.
+                            </li>
+                          </ol>
+
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Membership" class="container tab-pane fade mt-5">
+                  <div class="row">
+                    <div class="card w-100">
+                      <div class="col-md-12 px-3">
+                        <div class="card-block px-6">
+                          <h4 class="card-title">
+                            Membership
+                          </h4>
+                          <ol>
+                            <li>American Urological Association
+                            </li>
+                            <li>North Central Section of American Urological Association
+                            </li>
+                            <li>American Association of Clinical Urologists
+                            </li>
+                            <li>Endourological Society
+                            </li>
+                            <li>Michigan Urologic Society
+                            </li>
+                          </ol>
+
+                          <h4 class="card-title">
+                            Certification
+                          </h4>
+                          <ul>
+                            <li>06/2003 - present Michigan Physician Educational Limited License
+                            </li>
+                            <li>06/2003 - present Michigan Controlled Substance License
+                            </li>
+                            <li>08/2002 USMLE Step 1
+                            </li>
+                            <li>12/2001 USMLE Step 2
+                            </li>
+                            <li>12/2001 ECFMG-TOEFL
+                            </li>
+                            <li>12/2002 ECFMG-Clinical Skills Assessment, ECFMG Certification
+                            </li>
+                            <li>09/2004 USMLE Step 3
+                            </li>
+                            <li>08/2010 Part 1: American Board of Urology (ABU)
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Research" class="container tab-pane fade mt-5">
+                  <div class="row">
+                    <div class="card">
+                      <div class="col-md-12 px-3">
+                        <div class="card-block px-6">
+                          <h4 class="card-title">
+                            PEER-REVIEWED MANUSCRIPT & BOOK CHAPTERS
+
+
+                          </h4>
+                          <ol>
+                            <li>Sammon J, Kim T, Trinh Q, Bhandari A, Kaul S, Sukumar S, Rogers C, Peabody J. Anastomosis during Robot Assisted Radical Prostatectomy: A randomized controlled trial comparing barbed and standard monofilament suture. Urology, 2011. (Accepted for publication).</li>
+                            <li>Sammon J, Petros F, Sukumar S, Bhandari A, Kaul S, Menon M, Rogers C. Barbed suture for renorrhaphy during robot-assisted partial nephrectomy. J Endourol, 25(3), 529-533, 2011.</li>
+                            <li>Agarwal P, Sammon J, Bhandari A, Dabaja A, Diaz M. Dusik-Fenton S, Ramgopal S, Simone A, Trinh Q, Baize B, Menon M. Safety Profile of Robotic-Assisted Radical Prostatectomy: A Standardized Report of Complications in 3317 Patients. European Urology, Feb 5, 2011. (Epub ahead of print).</li>
+                            <li>Kheterpal E, Bhandari A, Siddiqui S, Pokala N, Peabody J, Menon M. Management of rectal injury during robotic radical prostatectomy. Urology, Feb 4, 2011. (Epub ahead of print).</li>
+                            <li>Naeem N, Petros F, Sukumar S, Patel M, Bhandari A, Kaul S, Menon M, Rogers C. Robot-assisted partial nephrectomy in obese patients. J Endourol, 25(1), 101-105, 2011.</li>
+                            <li>Petros F, Patel M, Kheterpal E, Siddiqui S, Ross J, Bhandari A, Diaz M, Menon M, Rogers C. Robotic partial nephrectomy in the setting of prior abdominal surgery. BJU International, December 22, 2010. (Epub ahead of print).</li>
+                            <li>Kaul S, Sammon J, Bhandari A, Peabody JO, Rogers CR, Menon M. A Novel Method of Urethrovesical Anastomosis during Robot Assisted Radical Prostatectomy using unidirectional barbed wound closure device: feasibility study and early outcomes in 51 patients. J Endourol, 24(11), 1789-1793, 2010.</li>
+                            <li>Bhandari A, Menon M. Complications of Robotic Prostatectomy. In Complications of Laparoscopic and Robotic and Urologic Surgery. Ed. Ghavamian R. Springer, New York. pp197-210, 2010.</li>
+                            <li>Bhandari A, Alassi O, Rogers C, MacLennan GT. Squamous cell carcinoma of the renal pelvis. J Urol, 183(5): 2023-2024, 2010.</li>
+                            <li>Patel MN, Kaul SA, Bhandari A, Menon M, Peabody JO, Elder JS, Rogers CG. Robot-Assisted Management of Congenital Renal Abnormalities in Adult Patients. J Endourol, 24(4): 567-570, 2010.</li>
+                            <li>Patel MN, Krane LS, Bhandari A, Laungani RG, Shrivastava A, Siddiqui SA, Menon M, Rogers CG. Robotic Partial Nephrectomy for Renal Tumors Greater than 4 cm. Eur Urol, 57(2): 310-316, 2010.</li>
+                            <li>Siddiqui SA, Krane LS, Bhandari A, Patel MN, Rogers CG, Stricker H, Peabody JO, Menon M. The Impact of Previous Inguinal or Abdominal Surgery on Outcomes after Robotic Radical Prostatectomy. Urology, 75(5): 1079-1082, 2010.</li>
+                            <li>Krane LS, Wambi C, Bhandari A, Stricker HJ. Posterior support for urethrovesical anastomosis in robotic radical prostatectomy: single surgeon analysis. Can J Urol, 16(5):4836-4840, 2009.</li>
+                            <li>Bhandari A, Boris R, Laungani R, Stricker H. Ureteral inguinal hernia in a pelvic kidney. J Urol, 181(1): 333, 2009.</li>
+                            <li>Rogers CG, Laungani R, Bhandari A, Krane LS, Eun D, Patel MN, Boris R, Shrivastava A, Menon M. Maximizing Console Surgeon Independence during Robot-Assisted Renal Surgery by Using the Fourth Arm and TileProTM. J Endourol, 23(1): 115-122, 2009.</li>
+                            <li>Boris R, Bhandari A, Krane LS, Eun D, Kaul S, Peabody J. Salvage Robotic Assisted Radical Prostatectomy: Initial Results and Early Report of Outcomes. BJU Int., 103(7): 952-956, 2009.</li>
+                            <li>Rogers C, Laungani R, Krane LS, Bhandari A, Bhandari M, Menon M. Robotic Nephrectomy for Treatment of Benign and Malignant Disease. BJU Int., 102(11): 1660-1665, 2008.</li>
+                            <li>Eun D, Bhandari A, Boris R, Bhandari M, Menon M, Rogers CG. A novel technique for creating solid renal pseudotumors and renal vein/IVC pseudothrombus in a live porcine and cadaveric model. J Urol, 180(4): 1510-1514, 2008.</li>
+                            <li>Bhandari A, Elder JS, MacLennan, GT. Fibrous pseudotumor of the tunica vaginalis. J. Urol. 179(2): 727, 2007.</li>
+                            <li>Boris R, Eun D, Bhandari A, Bhandari M, Rogers C, Menon M. Potassium-titanyl-phosphate (KTP) laser assisted robotic partial nephrectomy in a porcine model: Can robotic assistance optimize the power needed for effective cutting and hemostasis. J Robotic Surgery. 1(3):185-189, 2007.</li>
+                            <li>Danic M, Chow M, Alexander G, Bhandari A, Menon M, Brown M. Anesthesia Considerations for Robotic Assisted Laparoscopic Prostatectomy: A Review of 1500 cases. J Robotic Surgery. 1(2): 119-123, 2007.</li>
+                            <li>Eun D, Bhandari A, Boris R, Rogers C, Bhandari M, Menon M. Concurrent upper and lower urinary tract robotic surgery: strategies for success. BJU Int. 100(5): 1121-5, 2007.</li>
+                            <li>Menon M, Bhandari A. Complications of Robotic Prostatectomy. In Complications of Urologic Surgery and Practice: Diagnosis, Prevention and Management. Ed. Loughlin KR. Informa healthcare, New York. pp 369-379, 2007.</li>
+                            <li>Bhandari A, Richstone L, Tewari A. Surgical Robotics. In Textbook of Laparoscopic Urology. Ed. Gill IS. Informa Healthcare, New York. pp 105-114, 2006.</li>
+                            <li>Kaul S, Savera A, Badani K, Fumo M, Bhandari A, Menon M. Functional outcomes and oncological efficacy of Vattikuti Institute prostatectomy with Veil of Aphrodite nerve-sparing: an analysis of 154 consecutive patients. BJU Int. 97(3):467-72, 2006.</li>
+                            <li>Bhandari A, Hemal A, Menon M. Instrumentation, sterilization, and preparation of robot. Ind J Urol. 21(2), 83-88, 2005.</li>
+                            <li>Tewari A, Bhandari A, Hemal A, Menon M. Robotic radical prostatectomy-a minimally invasive therapy for prostate cancer: results of initial 530 cases. Ind J Urol. 21(2), 93-96, 2005.</li>
+                            <li>Kaul S, Bhandari A, Hemal A, Savera A, Shrivastava A, Menon M. Robotic radical prostatectomy with preservation of the prostatic fascia: a feasibility study. Urology. 66(6):1261-5, 2005.</li>
+                            <li>Badani KK, Bhandari A, Tewari A, Menon M. Comparison of two-dimensional and three-dimensional suturing: is there a difference in a robotic surgery setting? J Endourol. 19(10):1212-5, 2005.</li>
+                            <li>Menon M, Kaul S, Bhandari A, Shrivastava A, Tewari A, Hemal A. Potency following robotic radical prostatectomy: a questionnaire based analysis of outcomes after conventional nerve sparing and prostatic fascia sparing techniques. J Urol. 174(6):2291-6, discussion 2296, 2005.</li>
+                            <li>Bhandari A, McIntire L, Kaul SA, Hemal AK, Peabody JO, Menon M. Perioperative complications of robotic radical prostatectomy (VIP) after the learning curve. J. Urol. 174(3):915-8, 2005.</li>
+                            <li>Hemal AK, Bhandari A, Tewari A, Menon M. The window sign: an aid in laparoscopic and robotic radical prostatectomy. Int. Urol. Nephrol. 37(1):73-7, 2005.</li>
+                            <li>Menon M, Tewari A, Peabody JO, Shrivastava A, Kaul S, Bhandari A, Hemal AK. Vattikuti Institute prostatectomy, a technique of robotic radical prostatectomy for management of localized carcinoma of the prostate: experience of over 1100 cases. Urol Clin North Am. 31(4), 701-17, 2004.</li>
+                            <li>Menon M, Hemal AK, Tewari A, Shrivastava A, Bhandari A. The technique of apical dissection of the prostate and urethrovesical anastomosis in robotic radical prostatectomy. BJU International. 93(6), 715-9, 2004.</li>
+                            <li>Bhandari A, Menon M. Update on the evaluation of patients with nephrolithiasis. Contemporary Urology. p36-52, 2003.</li>
+                            <li>Koul H K, Menon M, Chaturvedi LS, Koul S, Sekhon A, Bhandari A, Huang M. COM-crystals activate the p38 mitogen-activated protein kinase signal transduction pathway in renal epithelial cells. J. Biol. Chem. 277(39), 36845-52, 2002.</li>
+                            <li>Bhandari A, Koul S, Sekhon A, Pramanik SK, Chaturvedi LS, Huang M, Menon M, and Koul H. Effects of oxalate on HK-2 cells, a line of proximal tubular epithelial cells from normal human kidney: J. Urol. 168, 253-259, 2002.</li>
+                            <li>Chaturvedi LS, Koul S, Sekhon A, Bhandari A, Menon M, and Koul H. Oxalate selectively activates p38 Mitogen-activated Protein kinase and c-Jun N-terminal kinase signal transduction pathways in renal epithelial cells: J. Biol. Chem. 277(15), 13321-13330, 2002.</li>
+                            <li>Koul S, Chaturvedi LS, Sekhon A, Bhandari A, Menon M, and Koul H: Effects of Oxalate on the re-initiation of DNA synthesis in LLC-PK1 cells do not involve p42/44 MAP Kinase activation. Kidney Int. 61(2), 525-533, 2002.</li>
+                            <li>Tiwari A, Kanotey B, Bhandari A, Peabody J, Stricker H, Johnson C, Demers R, and Menon M. Evaluation of the patient with Prostate Cancer: Medscape Hematology- Oncology 3(5), 2000.</li>
+                            </ol>
+                            <h4 class="card-title">
+                              PEER-REVIEWED ABSTRACTS
+                            </h4>
+                            <ol>
+                              <li>Kheterpal E, Kaul S, Sammon J, Bhandari A, Patil N, Pokala N, Rogers C. Heminephrectomy in Horseshoe Kidney: Robotic Assistance to Optimize Vascular Control &amp; Renorrhaphy. ERUS 2010, Bordeaux, France. (Video)</li>
+                              <li>Patil N, Bhandari A, Kaul S, Diaz-Insua M, Peabody J, Menon M. Template based pelvic lymph node metastasis in patients undergoing robotic radical prostatectomy. AUA 2010, San Francisco, CA. (Moderated Poster)</li>
+                              <li>Patil N, Kaul S, Bhandari A, Peabody J, Menon M. Association between Body Mass Index and percent tumor volume in patients with prostate cancer undergoing robotic radical prostatectomy. AUA 2010, San Francisco, CA. (Moderated Poster)</li>
+                              <li>Kaul S, Diaz M, Patil N, Kheterpal E, Bhandari A, Peabody J, Menon M, Rogers C. Natural history of biochemical persistent prostate cancer diagnosed in the era of screening. AUA 2010, San Francisco, CA. (Moderated Poster)</li>
+                              <li>Bhandari A, Krane LS, Lane Z, Menon M, Agarwal P. Impact of angiolymphatic invasion in lymph node positive prostate cancer. AUA 2009, Chicago, IL. (Podium).</li>
+                              <li>Patil N, Bhandari A, Diaz M, Bhandari M, Menon M. Oncologic outcomes in patients undergoing robot assisted radical prostatectomy in patients who are candidates for active surveillance. AUA 2009, Chicago, IL. (Podium).</li>
+                              <li>Krane LS, Bhandari A, Laungani R, Siddiqui S, Rogers CG, Bhandari M, Peabody J, Menon M. Catheter free radical prostatectomy: Feasibility and early outcomes. AUA 2009, Chicago, IL. (Moderated poster).</li>
+                              <li>Krane LS, Bhandari A, Stricker H. Posterior urethrovesical stitch does not improve early continence in patients undergoing robotic radical prostatectomy. AUA 2009, Chicago, IL. (Moderated poster).</li>
+                              <li>Siddiqui S, Krane LS, Bhandari A, Peabody J, Menon M. Impact of previous abdominal and inguinal surgery on the robotic assisted radical prostatectomy. AUA 2009, Chicago, IL. (Moderated poster).</li>
+                              <li>Bhandari A, Eun D, Boris R, Laungani, R, Rogers C, Menon M. A Novel robotic intraoperative ultrasound Tilepro device for robotic partial nephrectomy. AUA 2008, Orlando, Florida. (Moderated Poster)</li>
+                              <li>Bhandari A, Muhletaler F, Krane LS, Satyanarayana R, Stricker H, Peabody J, Menon M. Perioperative complications following robotic radical prostatectomy - 5 year Vattikuti Urology Institute experience. AUA 2008, Orlando, Florida. (Moderated Poster)</li>
+                              <li>Bhandari A, Eun D, Boris R, Rogers C, Bhandari M, Menon M. A Novel robotic intraoperative ultrasound Tilepro device for robotic partial nephrectomy. North Central Section of the AUA 2007, Hollywood, Florida. (Podium)</li>
+                              <li>Bhandari A, Baliga M, Muhletaler F, Satyanarayana R, Eun D, Boris R, Peabody J, Stricker H, Menon M. Perioperative complications following robotic radical prostatectomy - 5 year Vattikuti Urology Institute experience. North Central Section of the AUA 2007, Hollywood, Florida. (Podium)</li>
+                              <li>Bhandari A, Boris R, Eun D, Baliga M, Satyanarayana R, Bhandari M, Stricker H, Peabody J, Menon M. Impact of body mass index (BMI) on robotic radical prostatectomy. North Central Section of the AUA 2007, Hollywood, Florida. (Podium)</li>
+                              <li>Bhandari A, Eun D, Boris R, Lyall K, Phuong L, Rogers C, Bhandari M, Menon M. A novel technique for creating solid renal pseudotumors in a live porcine model: Training wheels for partial nephrectomy. Michigan Urological Society, 2007, Livonia, Michigan. (Podium)</li>
+                              <li>McIntire, L., Tewari, A., Bhandari, A., Peabody, J., Menon, M. Perioperative complications of the Robotic Radical Prostatectomy (VIP). North Central Section of the AUA 2004, Miami, Florida. (Poster)</li>
+                              <li>Badani, K., Tewari, A., Bhandari, A., Menon, M. Comparing three dimensional versus two dimensional views during robotic surgery. Is there a difference? North Central Section of the AUA 2004, Miami, Florida.</li>
+                              <li>Badani, K., Sarle, R., Bhandari, A., Tewari, A., Menon, M. The influence of body mass index (BMI) on blood loss and operative time during robotic radical prostatectomy. North Central Section of the AUA 2004, Miami, Florida.</li>
+                              <li>Sarle, R., Tewari, A., Shrivastava, A., Bhandari, A., Peabody, J., Menon, M. Prostate size and robotic prostatectomy. North Central Section of the AUA 2004, Miami, Florida.</li>
+                              <li>Bhandari, A., Peabody, J., Tiwari, A., Hemal, A. K., Guru, K. A., Shrivastava, A., Kaul, S., Menon, M. Does surgical robot assist in safe learning of Laparoscopic Radical Prostatectomy? AUA 2004, San Francisco, USA. (Poster)</li>
+                              <li>Guru, K. A., Bhandari, A., Peabody, J. O., Corey, M., Oja-Debbie, N., Kaul, S. A., Tewari, A., and Menon, M. Cost comparison between robotic-assisted laparoscopic prostatectomy (VIP) and radical retropubic prostatectomy. AUA 2004, San Francisco, USA.</li>
+                              <li>Menon, M., Tewari, A., Shrivastava, A., Hemal, A., Bhandari, A., Kaul, S., Guru, K., Dasari, R., and Peabody, J. Robotic Radical Prostatectomy-Status at 500 cases. World Congress of Endourology 2003, Montreal, Canada.</li>
+                              <li>Koul, H. K., Chaturvedi, L. S., Haung, M., Bhandari A., Menon, M., Wollner, I., Divine, G., Demers, R., Wali, A., and Davis, R. J. Role of p42/44 Mitogen Activated Protein Kinase Signal Transduction in PC-3 cells, a line of hormone independent prostate cancer cells. Proceedings of the AACR (44), 2003.</li>
+                              <li>Koul, H., Bhandari, A., Koul, S., Sekhon, A., Pramanik, S. K., Chaturvedi, L. S., Huang, M., and Menon, M. Oxalate is toxic to HK-2 cells, a line of proximal tubular epithelial cells from normal human kidney: Journal of Endourology, 16(Suppl. 1), pA13. World Congress of Endourology, September 2002, Genoa, Italy.</li>
+                              <li>Bhandari, A., Koul, S., Sekhon, A., Pramanik, S. K., Chaturvedi, L. S., Huang, M., Menon, M., and Koul, H. Effects of oxalate on HK-2 cells, a line of proximal tubular epithelial cells from normal human kidney: AUA 2002, Orlando, FL. (Poster)</li>
+                              <li>Koul, H., Chaturvedi, L. S., Koul, S., Sekhon, A., Bhandari, A., and Menon, M. Oxalate selectively activates p38 Mitogen-activated Protein kinase and c-Jun N-terminal kinase signal transduction pathways in renal epithelial cells. Federation of American Societies for Experimental Biology (FASEB) 2002, New Orleans, LA.</li>
+                              <li>Koul, H., Menon, M., Pramanik, S. K., Chaturvedi, L. S., Bhandari, A., and Huang, M. Oxalate Induced Transcriptional Activation of c-myc gene Involves Disruption of Interactions Between c-myc Transcription Regulatory Proteins and c-myc Intron Elements (MIE1, MIE2, and MIE3). 9th European Symposium on Urolithiasis, Rotterdam, The Netherlands, pp157-160 (2001).</li>
+                              <li>Menon, M., Tewari, A., Divine, G., Kim, J., Khil, M., Johnson, C., Lamarato, L., Bhandari, A., Demers, R. Comparison of long-term survival in men with clinically localized prostate cancer managed conservatively, with definitive radiation or radical prostatectomy: AUA 2001 Anaheim, CA.</li>
+                              <li>Tewari, A., Peabody, J., Divine, G., Demers, R., Courson, S., Bhandari, A., Christine, J., and Menon, M. Could differences in treatment received explain survival disadvantage in African American men with clinically localized prostate cancer: AUA 2001, Anaheim, CA.</li>
+                              </ol>
+
+                              
+                              <h4 class="card-title">
+                                PEER-REVIEWER TO INTERNATIONAL JOURNALS
+                              </h4>
+                              <ul>
+                                <li>Journal of Endourology</li>
+                                <li>BJU International</li>
+                                <li>Indian Journal of Urology</li>
+                                </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+                </div>
+              </div>
+
+              
+              
+            </div>
+          </div>
+         
+
+
+          </div>
+
+
+        </div>
+       
+
+        <div
+          class="container-fluid"
+          id="services1"
+          style="margin-top: 10px; background: #5db4c0"
+        >
+          <div class="container" style="padding: 0px 50px">
+            <div class="row">
+              <div class="col-md-9">
+                <h3 class="sectionsecond wow fadeInUp" data-wow-delay="1s">
+                  JOIN US
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay="1s" style="color: #fff">
+                  STAY UP-TO-DATE ON THE LATEST NEWS AND UPDATES AND HELP US BY
+                  SPREADING THE WORD.<br />
+                </p>
+              </div>
+
+              <div class="col-md-3">
+                <ul class="social-network social-circle">
+                  <li>
+                    <a
+                      href="#"
+                      class="icoYt"
+                      title="Youtube"
+                      style="background-color: #ff0000"
+                      ><i class="fa fa-youtube-play"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="icoFacebook"
+                      title="Facebook"
+                      style="background-color: #3b5998"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="icoGoogle"
+                      title="Google +"
+                      style="background-color: #bd3518"
+                      ><i class="fa fa-google-plus"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div
+          class="container-fluid"
+          id="services1"
+          style="margin-top: 5px; background: #0f4539; color: #fff"
+        >
+          <div class="container" style="padding: 0px 50px">
+            <div class="row">
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h4 class="headlink" style="color: #f3f1f1; font-weight: 700">
+                  Vfrsi Link
+                </h4>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+                <p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <a href="#" id="scroll" style="display: none"><span></span></a>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(function () {
+        $(".simple-marquee-container").SimpleMarquee();
+      });
+    </script>
+    <script>
+      $(".flexslider").flexslider({
+        animation: "slide",
+        controlNav: false,
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $("#scroll").fadeIn();
+          } else {
+            $("#scroll").fadeOut();
+          }
+        });
+        $("#scroll").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+    </script>
+
+    <!--<script>
+		const $dropdown = $(".dropdown");
+const $dropdownToggle = $(".dropdown-toggle");
+const $dropdownMenu = $(".dropdown-menu");
+const showClass = "show";
+
+$(window).on("load resize", function() {
+  if (this.matchMedia("(min-width: 768px)").matches) {
+    $dropdown.hover(
+      function() {
+        const $this = $(this);
+        $this.addClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "true");
+        $this.find($dropdownMenu).addClass(showClass);
+      },
+      function() {
+        const $this = $(this);
+        $this.removeClass(showClass);
+        $this.find($dropdownToggle).attr("aria-expanded", "false");
+        $this.find($dropdownMenu).removeClass(showClass);
+      }
+    );
+  } else {
+    $dropdown.off("mouseenter mouseleave");
+  }
+});
+		</script>-->
+
+    <script>
+      $(".dropdown").hover(function () {
+        $(".dropdown-toggle", this).trigger("click");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <link href="css/animate.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/marquee.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+
+  <script src="js/wow.min.js"></script>
+  <style>
+  html, body {
+	width: 100%;
+	height: 100%;
+	
+}
+article {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+}
+section {
+	background: #fff;
+	color: #444;
+	padding: 1rem;
+}
+  body{
+  font-family: 'Montserrat', sans-serif;
+  }
+  html{
+  overflow-x:hidden;
+  }
+  
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px !important;
+    border: 1px solid transparent;
+}
+  .navbar-default{
+  background-color:#f1f8f8;
+  }
+  .nav >li >a {
+  <!--   padding-top: 30px !important;
+    padding-bottom: 30px !important; -->
+}
+.navbar-default .navbar-nav>.active>a{
+	    color: #555;
+    background-color: transparent !important;
+}
+.rowpad{
+padding:0px !important;
+}
+
+.design{
+background: #ccc;
+    padding: 20px;
+    border-radius: 0 50px;} 
+	
+	
+.content {
+	display: block;
+	/* width: 1200px; */
+	width: 100%;
+	/*background: rgb(215, 215, 215);*/
+	background: #7fc6b7;
+	padding: 1em;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+.content *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.simple-marquee-container *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.simple-marquee-container {
+	width: 100%;
+	background: grey;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+}
+
+.simple-marquee-container .marquee-sibling {
+	padding: 0;
+	background: rgb(61, 61, 61);
+	width: 20%;
+	height: 45px;
+	line-height: 42px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: center;
+	float: left;
+	left: 0;
+	z-index: 2000;
+}
+
+.simple-marquee-container .marquee, .simple-marquee-container *[class^="marquee"] {
+	display: inline-block;
+	white-space: nowrap;
+	position:absolute;
+}
+
+.simple-marquee-container .marquee{
+  margin-left: 25%;
+}
+
+.simple-marquee-container .marquee-content-items{
+  display: inline-block;
+  padding: 5px;
+  margin: 0;
+  height: 45px;
+  position: relative;
+}
+
+.simple-marquee-container .marquee-content-items li{
+  display: inline-block;
+  line-height: 35px;
+  color: #fff;
+}
+
+.simple-marquee-container .marquee-content-items li:after{
+	content: "|";
+	margin: 0 1em;
+}
+
+
+
+.marquee-content-items li a {
+color:#fff !important;
+}
+
+
+
+
+
+/*slider*/
+
+
+.flexslider {
+		/*width: 790px;
+		margin: 0 auto;
+		box-shadow: none;*/
+		width: 100%;
+		/*margin: 0 auto;*/
+		box-shadow: none;
+}
+
+.flexslider li {
+		position: relative;
+}
+
+.flexslider li .meta {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		font-family: 'Roboto', sans-serif;
+}
+
+.flexslider li h1 {
+		background: rgba(51, 51, 51, 0.5);
+		padding: 12px 18px 12px;
+		margin-bottom: 0;
+		font-size: 1.8em;
+		font-weight: 300;
+}
+
+.flexslider li h2 {
+		background: rgba(51, 51, 51, 0.5);
+		padding: 13px 18px 11px;
+		font-size: 1.1em;
+		margin-bottom: 0;
+		font-weight: 300;
+}
+
+.flexslider li .category {
+		display: flex;
+		flex-direction: row;
+}
+
+.flexslider li .category p {
+		background: #e43837;
+		margin-right: 7px;
+		font-size: 1.1em;
+		padding: 12px 18px 10px;
+		font-weight: 300;
+}
+
+.flexslider li .category span {
+		background: #e43837;
+		margin-top: 17px;
+		padding: 8px 12px 0;
+		font-size: 0.9em;
+		font-weight: 300;
+		height: 26px;
+}
+
+.flexslider li h1,
+.flexslider li h2,
+.flexslider li .category p,
+.flexslider li .category span {
+		-webkit-animation-duration: .6s;
+		animation-duration: .6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: fadeOutLeft;
+		animation-name: fadeOutLeft;
+}
+
+.flexslider li.flex-active-slide .meta h1,
+.flexslider li.flex-active-slide .meta h2,
+.flexslider li.flex-active-slide .meta .category p,
+.flexslider li.flex-active-slide .meta .category span {
+		-webkit-animation-delay: .4s;
+		animation-delay: .4s;
+		-webkit-animation-duration: .6s;
+		animation-duration: .6s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: fadeInLeft;
+		animation-name: fadeInLeft;
+}
+
+.flexslider li.flex-active-slide .meta h2 {
+		-webkit-animation-delay: .5s;
+		animation-delay: .5s;
+}
+
+.flexslider li.flex-active-slide .meta .category p {
+		-webkit-animation-delay: .6s;
+		animation-delay: .6s;
+}
+
+.flexslider li.flex-active-slide .meta .category span {
+		-webkit-animation-delay: .8s;
+		animation-delay: .8s;
+}
+
+.flex-direction-nav {
+		position: absolute;
+		top: 0;
+		left: 30px;
+}
+
+.flex-direction-nav a {
+		text-decoration: none;
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-color: #333;
+		margin: -20px 0 0;
+		position: absolute;
+		top: 50px;
+		z-index: 10;
+		overflow: hidden;
+		opacity: .5;
+		cursor: pointer;
+		color: #fff;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+		text-align: left;
+		left: -10px;
+}
+
+.flex-direction-nav .flex-next {
+		text-align: right;
+		left: 30px;
+}
+
+.flexslider:hover .flex-prev {
+		left: -10px;
+}
+
+.flexslider:hover .flex-next {
+		left: 30px;
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+		opacity: 1;
+}
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+    height: 400px !important;
+}
+.flexslider {
+    margin: 0 0 0px !important;}
+.flex-direction-nav a:before {
+		font-family: FontAwesome;
+		content: '\f104';
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 0;
+		padding: 2px;
+		font-size: 19px;
+    line-height: 27px;
+}
+
+.flex-direction-nav a.flex-next:before {
+		content: '\f105';
+}
+
+@-webkit-keyframes fadeInLeft {
+		0% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+		100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+		}
+}
+
+@keyframes fadeInLeft {
+		0% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+		100% {
+				opacity: 1;
+				-webkit-transform: none;
+				transform: none;
+		}
+}
+
+@-webkit-keyframes fadeOutLeft {
+		0% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+}
+
+@keyframes fadeOutLeft {
+		0% {
+				opacity: 1;
+		}
+		100% {
+				opacity: 0;
+				-webkit-transform: translate3d(-100%, 0, 0);
+				transform: translate3d(-100%, 0, 0);
+		}
+}
+
+
+
+.section-bg{
+background: #f5f8fd;}
+#services{
+padding: 60px 0 40px 0 !important;}
+
+.section-bg1{
+background: #f5f8fd;}
+#services1{
+padding: 20px 0 40px 0 !important;}
+
+
+
+
+.sectionsecond{
+color: #7fc6b7;
+    font-weight: 800;
+}
+
+
+
+/*icons*/
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+  float: right;
+  margin-top:25px;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+.social-network a.icoYt:hover {
+	background-color: #e52d27 ;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+  background-color: #1f2027;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 3.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.8s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+  </style>
+</head>
+<body>
+ <article>
+<nav class="navbar navbar-default">
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="height:50px;"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" style="padding:20px 0;">
+        <li class="active"><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Network<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Surgeon's Library</a></li>
+        <li><a href="#">News & Events</a></li>
+		<li><a href="#">Patient's Library</a></li>
+         <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+    </form>
+      </ul>
+      
+    
+    </div>
+  </div>
+</nav>
+<section class="container-fluid mainheader">
+      
+    </section>
+<footer>
+<div class="container-fluid  section-bg " id="services1" style="margin-top:5px;">
+
+	<div class="container" style="padding:0px 50px;">
+		<div class="row">
+		
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4>Vfrsi Link</h4>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				<p>vfrsi link</p>
+				
+			</div>
+		
+		</div>
+	
+	</div>
+
+	
+
+</div>
+</footer>
+
+ <article>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<script>
+     $('.flexslider').flexslider({
+	animation: "slide",
+	controlNav: false
+});
+</script>
+<script>
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
+</script>
+<script>
+			$(function (){
+
+				$('.simple-marquee-container').SimpleMarquee();
+				
+			});
+
+		</script>
+	
+</body>
+</html>

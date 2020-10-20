@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vattikuti Foundation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <link href="css/animate.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/marquee.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/flexslider-min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+
+  <script src="js/wow.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  
+  .vattihead{
+      text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.12);
+    font-size: 30px;
+    color: #1c1c1d;
+    font-weight: 400;
+	margin-bottom:50px;
+  }
+   .vattihead span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.3em;
+    color: #807f7e;
+    letter-spacing: 4px;
+	text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.12);
+    font-size: 16px;
+    color: #1c1c1d;
+   
+}
+a.animated-button.victoria-two {
+    border: 2px solid #7fc6b7;
+}
+
+span.post-color {
+    font-size: 2em;
+    color: #7fc6b7;
+}
+.galsses-grid-right h5 {
+    font-size: 0.85em;
+    color: #888;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+    font-weight: 400;
+}
+h4.post {
+    font-size: 1em;
+    color: #454646;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+    font-weight: 600;
+}
+.galsses-grid-right p {
+    line-height: 2.2em;
+	    letter-spacing: 1px;
+}
+.galsses-grid-left img {
+    background: #f0f0f0;
+    padding: 0.4em;
+}
+
+h3.tittle-wthree {
+    text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.12);
+    font-size: 3em;
+    color: #1c1c1d;
+    font-weight: 400;
+}
+
+.testimonial_subtitle{
+    color: #0aaa7a;
+    font-size: 12px;
+}
+  .testimonial_btn{
+    background-color: #373d4b !important;
+    color: #fff !important;
+ }
+ .seprator {
+    height: 2px;
+    width: 56px;
+    background-color: #0aaa7a;
+    margin: 7px 0 10px 0;
+}
+
+
+
+
+
+#blog{
+	background-color:#f6f6f6;
+}
+
+#blog .carousel-indicators {
+  /*  bottom: -60px; */
+    bottom: -20px;
+}
+
+#blog .carousel-indicators li{
+    background-color: #5db4c0;
+    height: 13px;
+    width: 13px;
+    margin: 5px;
+}
+
+#blog .carousel-indicators li.active{
+    background-color: #888383;
+}
+
+#blog .card-block{
+    padding: 10px;
+}
+
+#blog .card{
+    background-color: #FFF;
+    border: 1px solid #eceaea;
+    margin: 20px 0px;
+}
+
+.btn.btn-default {
+    background-color: #7fc6b7;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.card-title{
+color:#7fc6b7;
+ text-shadow: 2px 2px 2px rgba(41, 41, 41, 0.12);
+}
+
+
+
+
+
+
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#7fc6b7;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#7fc6b7;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+  </style>
+</head>
+<body>
+<article>
+<nav class="navbar navbar-default">
+  <div class="container" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" style="height:50px;"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" style="padding:20px 0;">
+        <li class="active"><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Network<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Surgeon's Library</a></li>
+        <li><a href="#">News & Events</a></li>
+		<li><a href="#">Patient's Library</a></li>
+         <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+    </form>
+      </ul>
+      
+    
+    </div>
+  </div>
+</nav>
+<section>
+<div class="container-fluid rowpad">
+<div class="content">
+			<div class="simple-marquee-container">
+				<div class="marquee-sibling">
+					Vattikuti's New
+				</div>
+				<div class="marquee">
+					<ul class="marquee-content-items">
+						<li><a href="#"><img src="img/logo.png" style="height:40px;"/> Robotic Kidney Transplant with grafts having multiple renal arteries – Technical nuances</a></li>
+						<li><a href="#"><img src="https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531_1280.jpg" style="height:40px;"/> Robotic Kidney Transplant with grafts having multiple renal arteries – Technical nuances</a></li>
+						<li><a href="#"><img src="https://cdn.pixabay.com/photo/2015/02/08/23/23/tv-629231_1280.jpg" style="height:40px;"/> Robotic Kidney Transplant with grafts having multiple renal arteries – Technical nuances</a></li>
+						<li><a href="#"><img src="img/logo.png" style="height:20px;"/> Robotic Kidney Transplant with grafts having multiple renal arteries – Technical nuances</a></li>
+						<li><a href="#"><img src="img/logo.png" style="height:20px;"/> Robotic Kidney Transplant with grafts having multiple renal arteries – Technical nuances</a></li>
+						
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+</div>
+  
+<div class="container-fluid rowpad">
+ <div class="flexslider left">
+	<ul class="slides">
+		<li>
+			<img src="img/11.jpg">
+			<div class="meta">
+				<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+				<h2>Lorem ipsum dolor sit.</h2>
+				<!-- <div class="category">
+					<p>$286600</p>
+					<span>Category</span>
+				</div> -->
+			</div>
+		</li>
+		<li>
+			<img src="img/12.jpg">
+			<div class="meta">
+				<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+				<h2>Lorem ipsum dolor sit.</h2>
+				<!-- <div class="category">
+					<p>$415000</p>
+					<span>Category</span>
+				</div> -->
+			</div>
+		</li>
+		<li>
+			<img src="img/11.jpg">
+			<div class="meta">
+				<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+				<h2>Lorem ipsum dolor sit.</h2>
+				<!-- <div class="category">
+					<p>$415000</p>
+					<span>Category</span>
+				</div> -->
+			</div>
+		</li>
+		<li>
+			<img src="https://source.unsplash.com/Ui8KQ0ahXBM/1600x900">
+			<div class="meta">
+				<h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+				<h2>Lorem ipsum dolor sit.</h2>
+				<!-- <div class="category">
+					<p>$415000</p>
+					<span>Category</span>
+				</div> -->
+			</div>
+		</li>
+	</ul>
+</div>
+</div>
+
+<div class="container-fluid rowpad section-bg text-center" id="services">
+
+	<h3 class="sectionsecond wow fadeInUp" data-wow-delay="2s">ROBOTIC SURGERY IS A PARADIGM SHIFT IN THE FIELD OF SURGERY</h3>
+	<h2 class="wow slideInRight" data-wow-delay="2s">WHO WE ARE AND WHAT WE DO</h2>
+	<p class="wow slideInRight" data-wow-delay="2s">The Vattikuti Foundation is dedicated to bringing together<br>
+institutions, professionals and patients with the objective of educating and mentoring the Robotic Surgery community.</p>
+
+ <section class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
+                    </section>
+
+                    <section class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10">
+                    </section>
+
+</div>
+
+<div class="container" id="services">
+
+	<div class="row">
+	<h3 class="vattihead text-center ">
+                    <span>Visit</span>Welcome to our Vattikutifoundation</h3>
+		
+	
+	
+	
+                    <div class="col-md-6 about-img">
+                        <img src="img/logo.png" alt=""  style="height:250px;border:5px solid #f0f0f0;padding:50px;width: 100%;">
+                    </div>
+                    <div class="col-md-6 aboutright wow fadeInUp" data-wow-delay="2s">
+                       
+
+                        <h4>ABOUT US</h4>
+
+                        <p>The Vattikuti Foundation (VF) is committed to making robotic surgery and other technologically advanced medical procedures of the future cost effective and available to underprivileged communities. The Foundation has partnered with hospitals around the world to create a Network of Institutes. These institutions are well developed, highly experienced and specialize in the areas of urology, cardiac surgery, gynaecology, ENT, surgical oncology, transplantation and gastro and hepato-billary surgery.</p>
+						
+                        <div class="read inner mt-4">
+                            <a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+</div>
+
+
+<div class="container" id="services">
+
+	
+	<h3 class="vattihead text-center ">
+                    <span>Visit</span>Upcoming Events</h3>
+		
+	
+	
+	
+                   <div class="row choose-main ">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 galsses-grid-right">
+                                <h5>
+                                    <span class="post-color">21</span> Oct 2020</h5>
+                                <h4 class="post my-3">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .. </p>
+                                <div class="read inner" style="margin-top:20px;">
+                                    <a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 galsses-grid-right">
+                                <div class="galsses-grid-left">
+
+                                    <img src="img/5.jpg" alt="" style="height: auto; width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 galsses-grid-right">
+                                <h5>
+                                    <span class="post-color">24</span> Oct 2020</h5>
+                                <h4 class="post my-3">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .. </p>
+                                <div class="read inner" style="margin-top:20px;">
+                                    <a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 galsses-grid-right">
+                                <div class="galsses-grid-left">
+
+                                    <img src="img/6.jpg" alt="" style="height: auto; width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				 <div class="row choose-main " style="margin-top:30px;">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 galsses-grid-right">
+                                <h5>
+                                    <span class="post-color">21</span> Oct 2020</h5>
+                                <h4 class="post my-3">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .. </p>
+                                <div class="read inner " style="margin-top:20px;">
+                                    <a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 galsses-grid-right">
+                                <div class="galsses-grid-left">
+
+                                    <img src="img/5.jpg" alt="" style="height: auto; width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6 galsses-grid-right">
+                                <h5>
+                                    <span class="post-color">24</span> Oct 2020</h5>
+                                <h4 class="post my-3">Lorem ipsum dolor sit amet</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit .. </p>
+                                <div class="read inner " style="margin-top:20px;">
+                                    <a href="about.html" class="btn btn-sm animated-button victoria-two">Read More</a>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 galsses-grid-right">
+                                <div class="galsses-grid-left">
+
+                                    <img src="img/6.jpg" alt="" style="height: auto; width: 100%;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+</div>
+
+
+<div class="container-fluid" id="services">
+
+	
+	<!-- <h3 class="vattihead text-center ">
+                    <span>Visit</span>Our News</h3> -->
+		
+	<section id="blog">
+   <div class="container">
+           
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 text-center">  
+                <h3 class="vattihead text-center ">
+                    <span>Visit</span>Our News</h3>
+                
+            </div> 
+         </div>  
+                
+        <div class="row">
+             
+			 <div id="slider" class="carousel slide" data-ride="carousel">
+                        
+                     <ol class="carousel-indicators">
+                         <li data-target="#slider" data-slide-to="0" class="active"></li>
+                         <li data-target="#slider" data-slide-to="1"></li>
+                     </ol>
+                            
+                      
+             <!-- Carousel items -->
+             <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+					
+                	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News One</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Two</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Three</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Four</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					 
+                	</div> <!-- row -->
+                </div> <!-- item -->
+                 
+                <div class="item">
+                	<div class="row">
+                		
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Five</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129105/pexels-photo-129105.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Six</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Seven</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+					  
+					   <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						 <div class="card text-center">
+							<img class="card-img-top" src="https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" width="100%">
+							<div class="card-block">
+								<h4 class="card-title">News Eight</h4>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a class="btn btn-default" href="#">Read More</a>
+							</div>
+						 </div>
+					  </div>
+						
+                	</div> <!-- row -->
+                </div> <!-- item -->
+                 
+                 
+				</div>
+			</div>
+		</div>
+			
+	</div>
+</section>
+	
+	
+                   
+               
+
+</div>
+
+
+
+<div class="container " id="services">
+
+	<div class="row">
+		
+		<div class="col-md-6">
+			<h3 class="sectionsecond wow fadeInUp" data-wow-delay="2s">Vision & Mission</h3>
+			<hr>
+			<p class="wow fadeInUp" data-wow-delay="2s" style="text-align:justify;">The vision of the Vattikuti Foundation is to be a leader in multispecialty robotic surgery and other high-tech minimally invasive surgery through our global network of institutions and surgeons yielding comprehensive, cost-effective delivery of high-quality surgical care to all strata of population.</p>
+			<p class="wow fadeInUp" data-wow-delay="2s" style="text-align:justify;">The mission of the Vattikuti Foundation is to develop worldwide centers of excellence dedicated to the practice of state-of-the-art robotic surgery and to innovate through collaboration with our global network of multispecialty institutes. These institutes will leverage their collective wisdom to provide a positive surgical experience that is affordable to patients from all of society.  We support education through the Robotic Surgeons Council of India, support for Master Classes, Fellowships at Hospitals and Institutions in India and the U.S., and through this website.</p>
+			
+		</div>
+		
+		<div class="col-md-6 text-center design" >
+			<img src="img/vision-mission.jpg" class="img-responsive img-thumbnail" style="margin:0 auto;"/>
+		</div>
+	
+	</div>
+
+</div>
+
+<div class="container" id="services">
+
+	<div class="row">
+		<div class="col-md-6 text-center design" >
+			<img src="img/timeline.jpg" class="img-responsive img-thumbnail" style="margin:0 auto;"/>
+		</div>
+		<div class="col-md-6">
+			<h3 class="sectionsecond wow fadeInUp" data-wow-delay="2s">Robotic Surgery Timeline</h3>
+			<hr>
+			<p class="wow fadeInUp" data-wow-delay="2s" style="text-align:justify;">It was 1921, when Karel Čapek invented the term “Robot” for a fictional humanoid in a play named R.U.R. ‘Rossum's Universal Robots’ (1920). Decades later, robots are used everywhere, from vacuuming floors and mowing lawns to assembling products from automobiles to computers. “Robotics”, a science first envisioned by the late science fact and fiction author Dr. Isaac Asimov in 1941. His famous “three laws of robotics” are a recurring theme in his books.It was 1921, when Karel Čapek invented the term “Robot” for a fictional humanoid in a play named R.U.R. ‘Rossum's Universal Robots’ (1920). Decades later, robots are used everywhere, from vacuuming floors and mowing lawns to assembling products from automobiles to computers. “Robotics”, a science first envisioned by the late science fact and fiction author Dr. Isaac Asimov in 1941. His famous “three laws of robotics” are a recurring theme in his books.</p>
+			
+		</div>
+	
+	</div>
+
+</div>
+
+
+<div class="container-fluid" style="background-color: aliceblue;margin-bottom:30px;">
+	<div class="container ">
+		<div class="col-sm-12">
+       <h3 class="tittle-wthree  my-lg-4 mt-3">Testimonial</h3>
+        <div class="seprator"></div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row" style="padding: 20px">
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/jack.jpg" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Jack Andreson</strong></h4>
+                        <p class="testimonial_subtitle"><span>Chlinical Chemistry Technologist</span><br>
+                        <span>Officeal All Star Cafe</span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="item">
+                   <div class="row" style="padding: 20px">
+                    <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
+                    <p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo en.</p><br>
+                    <div class="row">
+                    <div class="col-sm-2">
+                        <img src="http://demos1.showcasedemos.in/jntuicem2017/html/v1/assets/images/kiara.jpg" class="img-responsive" style="width: 80px">
+                        </div>
+                        <div class="col-sm-10">
+                        <h4><strong>Kiara Andreson</strong></h4>
+                        <p class="testimonial_subtitle"><span>Chlinical Chemistry Technologist</span><br>
+                        <span>Officeal All Star Cafe</span>
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls testimonial_control pull-right">
+                <a class="left fa fa-chevron-left btn btn-default testimonial_btn" href="#carousel-example-generic"
+                  data-slide="prev"></a>
+
+                <a class="right fa fa-chevron-right btn btn-default testimonial_btn" href="#carousel-example-generic"
+                  data-slide="next"></a>
+              </div>
+        </div>
+	</div>
+</div>
+
+<div class="container-fluid  ">
+
+<div class="row">
+	
+	<div class="col-md-4 ">
+		<div class="video img-thumbnail">
+			<iframe width="450" height="315" src="https://www.youtube.com/embed/LjWm3ngyiSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<div class="topicname">
+			<a href="">Robotic Recision of Aspergilloma</a>
+		</div>
+		
+		<div class="shareicons" style="margin:10px 0;">
+		
+			<a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a>
+			<a href="" class="pull-right"><i class="fa fa-bell " aria-hidden="true"></i> Subscribe</a>
+
+
+		</div>
+		
+		<div class="category" >
+			<p>Gynaecology / Various GYN <span class="pull-right"><i class="fa fa-clock-o" aria-hidden="true"></i>
+ 05:27</span></p>
+			
+			
+		</div>
+		
+		</div>
+	</div>
+	<div class="col-md-4 ">
+		<div class="video img-thumbnail">
+			<iframe width="450" height="315" src="https://www.youtube.com/embed/LjWm3ngyiSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<div class="topicname">
+			<a href="">Robotic Recision of Aspergilloma</a>
+		</div>
+		
+		<div class="shareicons" style="margin:10px 0;">
+		
+			<a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a>
+			<a href="" class="pull-right"><i class="fa fa-bell " aria-hidden="true"></i> Subscribe</a>
+
+
+		</div>
+		
+		<div class="category" >
+			<p>Gynaecology / Various GYN <span class="pull-right"><i class="fa fa-clock-o" aria-hidden="true"></i>
+ 05:27</span></p>
+			
+			
+		</div>
+		
+		</div>
+	</div>
+	
+	<div class="col-md-4 ">
+		<div class="video img-thumbnail">
+			<iframe width="450" height="315" src="https://www.youtube.com/embed/LjWm3ngyiSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<div class="topicname">
+			<a href="">Robotic Recision of Aspergilloma</a>
+		</div>
+		
+		<div class="shareicons" style="margin:10px 0;">
+		
+			<a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</a>
+			<a href="" class="pull-right"><i class="fa fa-bell " aria-hidden="true"></i> Subscribe</a>
+
+
+		</div>
+		
+		<div class="category" >
+			<p>Gynaecology / Various GYN <span class="pull-right"><i class="fa fa-clock-o" aria-hidden="true"></i>
+ 05:27</span></p>
+			
+			
+		</div>
+		
+		</div>
+	</div>
+	
+</div>
+
+</div>
+
+
+
+
+<div class="container-fluid  " id="services1" style="margin-top:10px;background:#5db4c0;">
+
+	<div class="container" style="padding:0px 50px;">
+		<div class="col-md-9 " >
+		
+		<h3 class="sectionsecond wow fadeInUp" data-wow-delay="1s">JOIN US</h3>
+		<p class="wow fadeInUp" data-wow-delay="1s" style="color:#fff;">STAY UP-TO-DATE ON THE LATEST NEWS AND UPDATES AND HELP US BY SPREADING THE WORD.<br>
+		</div>
+		<div class="col-md-3 ">
+			<ul class="social-network social-circle">
+    <li><a href="#" class="icoYt" title="Youtube" style="background-color:#FF0000;"><i class="fa fa-youtube-play"></i></a></li>
+    <li><a href="#" class="icoFacebook" title="Facebook" style="background-color:#3B5998;"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#" class="icoGoogle" title="Google +" style="background-color: #BD3518;"><i class="fa fa-google-plus"></i></a></li>
+  </ul>
+		
+		</div>
+	
+	</div>
+
+	
+
+</div>
+</section>
+<footer>
+<div class="container-fluid   " id="services1" style="margin-top:5px;background:#0f4539;color:#fff;">
+
+	<div class="container" style="padding:0px 50px;">
+		<div class="row">
+		
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#898989;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#f3f1f1;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#f3f1f1;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#f3f1f1;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#f3f1f1;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<h4 class="headlink" style="color:#f3f1f1;font-weight:700;">Vfrsi Link</h4>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				<p><i class="fa fa-angle-double-right"></i> vfrsi link</p>
+				
+			</div>
+		
+		</div>
+	
+	</div>
+
+	
+
+</div>
+</footer>
+
+
+
+</article>
+
+
+<a href="#" id="scroll" style="display: none;"><span></span></a>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.0/jquery.flexslider-min.js"></script>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+<script>
+     $('.flexslider').flexslider({
+	animation: "slide",
+	controlNav: false
+});
+</script>
+<script>
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
+</script>
+<script>
+			$(function (){
+
+				$('.simple-marquee-container').SimpleMarquee();
+				
+			});
+
+		</script>
+		
+		<script>
+		
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+		</script>
+	
+</body>
+</html>
